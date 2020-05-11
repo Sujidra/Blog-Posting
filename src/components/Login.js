@@ -43,7 +43,7 @@ class Login extends React.Component{
                 <div className="login_box">
                     <h2 className="signup"><center>Login</center></h2>
                                 
-                    {this.props.error && <p>{this.props.error}</p> } 
+                    {this.props.error && <p className="loginerror">{this.props.error}</p> } 
                     <form onSubmit={this.onSubmit} className="form">
                         <input className="input" type="text" placeholder="Email" value={this.state.email} onChange={(e)=>{this.onChangeEmail(e)}} />
                         <input className="input" type="password" placeholder="password" value={this.state.password} onChange={(e)=>{this.onChangePassword(e)}} />
