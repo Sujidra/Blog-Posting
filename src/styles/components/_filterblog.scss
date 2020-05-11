@@ -1,0 +1,111 @@
+.blogfilter_container{
+    padding-top: 20px;;
+    padding-left: 15%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    padding-bottom: 10px;
+}
+
+.searchbox{
+    height: 49;
+    background-color: #fff;
+    border: 1px solid #cacccd;
+    display: inline-block;
+    padding-left:10px;
+    font-size: 20px;
+    width: 300px;
+    
+}
+
+.sortbox{
+    @extend .searchbox;
+    width:100px;
+    }
+
+.box{
+    margin-left:15%;
+    width: 70%;
+    margin-right: 15%;
+    
+}
+
+.listheading{
+    border: 1px solid #cacccd ;
+    padding:0 20px;
+    background-color: fade-out(grey,0.90);
+    p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #cacccd ;
+    padding:0 20px;
+}
+
+.listitem{
+    p{
+        margin:0;
+        margin-top: 10px;
+        
+    }
+    
+    margin-top:10;
+    
+}
+   
+.edit{
+    margin-top:25px ;
+    text-decoration: none;
+    width: auto;
+    height: 20px;
+    background: rgb(73, 142, 245);
+    color:white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    margin-left: 15%;
+    
+}
+.itemtitle{
+    font-size: 22px;
+    color:rgb(168, 39, 168);
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+@media only screen and(max-width:500px)
+{
+    .searchbox{
+        width:200;
+    }
+    .create{
+        display: none;
+     }
+
+}
+
+@media only screen and(max-width:400px)
+{
+    .searchbox{
+        width:125;
+    }
+    .create{
+       display: none;
+    }
+    .list{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .listheading{
+    padding-left: 10px;
+    }
+
+
+}

@@ -65,12 +65,12 @@ onSubmit=(e)=>{
 render(){
     return(
         <div>
-            {this.state.error && <p>{this.state.error}</p>}
-            <form onSubmit={this.onSubmit}>
-                <input type="text" placeholder="Title of Blog" value={this.state.title} onChange={(e)=>{this.onChangeTitle(e)}}></input>
-                <textarea placeholder="Content of the blog" value={this.state.content} onChange={(e)=>{this.onChangeContent(e)}}></textarea>
-                <button value="submit">{this.props.blog?<p>Update Blog</p>:<p>Submit</p>}</button>
-                {console.log(this.props)}
+            {this.state.error && <p className="blogerror">{this.state.error}</p>}
+            <form className="blogform" onSubmit={this.onSubmit}>
+                <input className="blogtitle" type="text" placeholder="Title of Blog" value={this.state.title} onChange={(e)=>{this.onChangeTitle(e)}}></input>
+                <textarea className="textarea" placeholder="Content of the blog" value={this.state.content} onChange={(e)=>{this.onChangeContent(e)}}></textarea>
+                <button className="submitblog" value="submit">{this.props.blog?<p>Update</p>:<p>Submit</p>}</button>
+                
             </form>
         </div>
     )}

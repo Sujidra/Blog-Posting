@@ -1,0 +1,61 @@
+.header{
+    margin-top:0px;
+    background: rgb(168, 39, 168);
+    color: white;
+    height: auto;
+    display: flex;
+    padding:20px 0;
+    padding-left: 10%;
+    padding-right: 7%;
+    justify-content: space-between;
+}
+.headtitle{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+       
+}
+.logout{
+    border: none;
+    background:  rgb(168, 39, 168);
+    color:white;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 3px;
+}
+.subhead{
+    margin-top: 0px;
+    background-color:fade-out(grey,0.90);
+    margin: 0;
+    padding-top:10px;
+    padding-left: 15%;
+    line-height: 1.5;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.createbutton{
+    width: 150px;
+    height: 35px;
+    background: rgb(73, 142, 245);
+    color:white;
+    border: none;
+    cursor: pointer;
+    padding: 10;
+    font-size: 20px;
+    text-decoration: none;
+}
+.summary{
+    font-size: 25px;
+    
+}
+.addsubhead{
+    background-color:fade-out(grey,0.90);
+    margin: 0;
+    padding-top:20px;
+    padding-left: 15%;
+    line-height: 1.5;
+    padding-right: 15%;
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-weight: 700;
+}

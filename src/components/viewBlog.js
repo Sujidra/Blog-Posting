@@ -4,9 +4,14 @@ import { Link } from "react-router-dom";
 const viewBlog = (props)=>{
     return(
         <div>
-            <h2><center>{props.blog.title}</center></h2>
-            <p>{props.blog.content}</p>
-            <Link to="/dashboard">Back</Link>
+            <div className="viewheader">
+                <h2><center>{props.blog.title}</center></h2>
+            </div>
+            <div class="viewbody">
+                <p>{props.blog.content}</p>
+            </div>
+
+            <Link className="removeblog" to="/dashboard">Back</Link>
         </div>
     )
 }

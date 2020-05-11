@@ -82,15 +82,20 @@ class Register extends React.Component{
 
     render(){
         return(
-            <div>
-                {this.state.error && <p>{this.state.error}</p>}
-                <form onSubmit={this.submitform}>
-                    <input type="text"placeholder="Username" value={this.state.username} onChange={(e)=>{this.onchangeUsername(e)}}/>
-                    <input type="email"placeholder="Email" value={this.state.email} onChange={(e)=>{this.onChangeEmail(e)}} />
-                    <input type="password"placeholder="Password" value={this.state.password} onChange={(e)=>{this.onChangePassword(e)}} />
-                    <button value="submit" >Register</button>
-                </form>
-                <Link to="/login">Login</Link>
+            <div className="register">
+                <div className="register_box">
+                    <h1 className="title"><center>BLOG CREATER</center></h1>
+                    <h2 className="signup"><center>SIGNUP</center></h2>
+                    {this.state.error && <p className="loginerror">{this.state.error}</p>}
+                    <form onSubmit={this.submitform} className="form">
+                        <input className="input" type="email"placeholder="Email" value={this.state.email} onChange={(e)=>{this.onChangeEmail(e)}} />
+                        <input className="input"type="text"placeholder="Username" value={this.state.username} onChange={(e)=>{this.onchangeUsername(e)}}/>
+                        <input className="input" type="password"placeholder="Password" value={this.state.password} onChange={(e)=>{this.onChangePassword(e)}} />
+                        <button className="regbutton" value="submit" >Register</button>
+                    </form>
+                    <p className="account">Already have an account? <Link className="login" to="/login">Login</Link></p>
+                
+                </div>
             </div>
         )    
     }

@@ -1,0 +1,55 @@
+.blogform{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+.blogerror{
+    margin: 0px;
+    margin-top: 20px;
+    padding-left: 15%;
+    padding-right:15%;
+    font-size: 25px;
+    color:red;
+    font-style: italic;
+}
+
+
+.blogtitle{
+    height: 46;
+    padding: 1px 10px;
+    border: 1px solid #cacccd;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.textarea{
+    @extend .blogtitle;
+    height: 300px;
+    padding-top:20px;
+}
+
+.submitblog{
+    width: 100px;
+    height: 35px;
+    text-decoration:none;
+    margin-top: 0;
+    background: rgb(73, 142, 245);
+    color:white;
+    border: none;
+    cursor: pointer;
+    padding: 7px;
+    font-size: 20px;
+    p{
+        margin:0;
+    }
+    
+}
+
+.removeblog{
+    @extend .submitblog;
+    margin-left: 15%;
+    width: auto;
+}

@@ -5,7 +5,7 @@ import { connect } from "react-redux"
 const CreateBlog =(props)=>{
     return(
         <div>
-            <h1>This is create page</h1>
+            <p className="addsubhead">Create page</p>
             <BlogForm onSubmit={(blog)=>{props.dispatch(startAddBlog(blog))}}/>
         </div>
     )

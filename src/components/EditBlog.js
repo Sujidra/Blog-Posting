@@ -5,9 +5,9 @@ import BlogForm from "../components/BlogForm"
 const EditBlog =(props)=>{
     return(
         <div>
-            <h1>This is edit page</h1>
+            <p className="addsubhead">Edit page</p>
             <BlogForm blog={props.blog} onSubmit={(blog)=>{props.dispatch(startEditBlog(props.blog.blogid,blog))}} />
-            <button onClick={(e)=>{props.dispatch(startRemoveBlog(props.blog.blogid)) 
+            <button className="removeblog" onClick={(e)=>{props.dispatch(startRemoveBlog(props.blog.blogid)) 
             props.history.push("/dashboard")}}>Remove Blog</button>
         </div>
     )
