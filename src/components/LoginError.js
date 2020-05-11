@@ -1,7 +1,7 @@
 import React from "react"
 const LoginError = () =>{
     return(
-        <div>
+        <div className="loginerror">
             <p>Please enter correct username and password</p>
         </div>
     )
