@@ -8,7 +8,7 @@ const viewBlog = (props)=>{
                 <h2><center>{props.blog.title}</center></h2>
             </div>
             <div class="viewbody">
-                <p>{props.blog.content}</p>
+                <p className="viewcontent"> &emsp; {props.blog.content}</p>
             </div>
 
             <Link className="removeblog" to="/dashboard">Back</Link>
